@@ -1,0 +1,171 @@
+.price {
+  .price-table {
+    width: 100%;
+    padding: 20px;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: table;
+    }
+
+    .price-table__head {
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #7e7e82;
+    }
+
+    .price-table__body {
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.20000000298023224px;
+      text-align: left;
+      color: #1b1c21;
+
+      .price-table__row {
+        border-bottom: 1px solid #eaeaea;
+        height: 50px;
+      }
+    }
+  }
+
+  .slider-price__order {
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    background-color: #ff3e79;
+    color: #ffffff;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-top: auto;
+    font-family: TT Lakes;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -0.15000000596046448px;
+    &::before {
+      content: '';
+      width: 10px;
+      height: 5px;
+    }
+    &::after {
+      content: '';
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNi4wNTkwODIiIGhlaWdodD0iOS4yMzI2NjYiIHZpZXdCb3g9IjAgMCA2LjA1OTA4IDkuMjMyNjciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KCTxkZXNjPg0KCQkJQ3JlYXRlZCB3aXRoIFBpeHNvLg0KCTwvZGVzYz4NCgk8ZGVmcy8+DQoJPHBhdGggaWQ9ImRyb3Bkb3duIiBkPSJNMy4zMzEwNSA0LjYzMzNMMC4zMjI1MSAxLjg2MjNDLTAuMTA0OTggMS40Njg1MSAtMC4xMDc5MSAwLjc5NDY3OCAwLjMxNjE2MiAwLjM5NzIxN0wwLjQ1MTQxNiAwLjI3MDUwOEMwLjgzNDIyOSAtMC4wODg2MjMgMS40Mjk0NCAtMC4wOTAzMzIgMS44MTQ3IDAuMjY2MzU3TDUuNzM4NTMgMy44OTk0MUM2LjE2NjAyIDQuMjk1MTcgNi4xNjYwMiA0Ljk3MTE5IDUuNzM4NTMgNS4zNjY5NEwxLjg3NzY5IDguOTQxODlDMS40NTcwMyA5LjMzMTMgMC44MDY4ODUgOS4zMjkzNSAwLjM4ODY3MiA4LjkzNzI2Qy0wLjA3NDQ2MjkgOC41MDI5MyAtMC4wNzEyODkxIDcuNzY2ODUgMC4zOTU1MDggNy4zMzY5MUwzLjMzMTA1IDQuNjMzM1oiIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+DQo=");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: auto;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .slider-price__order:hover{
+    transform: scale(1.03);
+    opacity: 90%;
+    transition: all 0.3s ease-out;
+  }
+
+  .repair-heading {
+    font-family: TT Lakes;
+    color: #7e7e82;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 260px;
+    @media (min-width: 320px) {
+      display: flex;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    .slider-price__wrapper {
+      width: 260px;
+      height: 200px;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 10px;
+
+      .slider-price__service {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #7e7e82;
+      }
+
+      .slider-price__service-value {
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        font-weight: 700;
+        color: #1b1c21;
+      }
+
+      .slider-price__order-block {
+        display: flex;
+      }
+    }
+  }
+
+  .price__paragraph {
+    margin-bottom: 10px;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #1b1c21;
+    @media (min-width: 320px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1366px) {
+      width: 33%;
+    }
+  }
+
+  .price__offer {
+    display: flex;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    font-weight: 700;
+    color: #1b1c21;
+    margin-bottom: 30px;
+    &::after {
+      display: block;
+      content: '';
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNi42NzEzODciIGhlaWdodD0iMTEuMTcxMzg3IiB2aWV3Qm94PSIwIDAgNi42NzEzOSAxMS4xNzE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCgk8ZGVzYz4NCgkJCUNyZWF0ZWQgd2l0aCBQaXhzby4NCgk8L2Rlc2M+DQoJPGRlZnMvPg0KCTxwYXRoIGlkPSJkcm9wZG93biIgZD0iTTQuMDg1NjkgNS41ODU2OUwwLjI5MjcyNSAxLjc5MjcyQy0wLjA5NzY1NjIgMS40MDIzNCAtMC4wOTc2NTYyIDAuNzY5MDQzIDAuMjkyNzI1IDAuMzc4NjYyTDAuMzc4NjYyIDAuMjkyNzI1QzAuNzY5MDQzIC0wLjA5NzY1NjIgMS40MDIzNCAtMC4wOTc2NTYyIDEuNzkyNzIgMC4yOTI3MjVMNi4zNzg2NiA0Ljg3ODY2QzYuNzY5MDQgNS4yNjkwNCA2Ljc2OTA0IDUuOTAyMzQgNi4zNzg2NiA2LjI5MjcyTDEuNzkyNzIgMTAuODc4N0MxLjQwMjM0IDExLjI2OSAwLjc2OTA0MyAxMS4yNjkgMC4zNzg2NjIgMTAuODc4N0wwLjI5MjcyNSAxMC43OTI3Qy0wLjA5NzY1NjIgMTAuNDAyMyAtMC4wOTc2NTYyIDkuNzY5MDQgMC4yOTI3MjUgOS4zNzg2Nkw0LjA4NTY5IDUuNTg1NjlaIiBmaWxsPSIjRkYzRTc5IiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4NCjwvc3ZnPg0K");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

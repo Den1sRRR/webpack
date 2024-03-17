@@ -1,0 +1,61 @@
+
+
+@import '../blocks/header-navigation/header-navigation.scss';
+@import '../blocks/services/services.scss';
+@import '../blocks/aside-menu/aside-menu.scss';
+@import '../blocks/brands/brands.scss';
+@import '../blocks/repair/repair.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/price/price.scss';
+@import '../blocks/aside-call/aside-call.scss';
+@import '../blocks/aside-status/aside-status.scss';
+@import '../blocks/reset.scss';
+
+@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(/src/fonts/TTLakes-Regular.ttf), url(/src/fonts/TTLakes-Bold.ttf);
+ }
+  
+* {
+    font-family: 'TT Lakes';
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+
+  }
+ #menu {
+    z-index: -4;
+ }
+
+ .text_focus:focus {
+  border: 2px solid #F8F8F8;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+  outline: none;
+}
+.text_focus:focus {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+}
+  .overlay--active {
+    
+    position: fixed;
+    background-color: #fff;
+    opacity: 0.96;
+    transition: all 0.5s ease-in-out;
+  }
+.hidden{
+    display: none;
+}

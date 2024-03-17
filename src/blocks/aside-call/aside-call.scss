@@ -1,0 +1,128 @@
+.aside-call {
+  position: fixed;
+  background-color: white;
+  width: 320px;
+  height: 100%;
+  margin-left: auto;
+  right: 0;
+  transform: translateX(400px);
+  filter: blur(0px);
+  transition: all 0.5s ease-out;
+  z-index: 2;
+
+  .aside-call__close-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #ff3e79;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMi43OTM0OCAxLjI1NzEyQzIuNDAyOTUgMC44NjY1OTMgMS43Njk3OSAwLjg2NjU5MiAxLjM3OTI3IDEuMjU3MTJMMS4yNTcxMiAxLjM3OTI3QzAuODY2NTkyIDEuNzY5NzkgMC44NjY1OTMgMi40MDI5NiAxLjI1NzEyIDIuNzkzNDhMNy40NjM2NCA5TDEuMjU3MTIgMTUuMjA2NUMwLjg2NjU5MyAxNS41OTcgMC44NjY1OTIgMTYuMjMwMiAxLjI1NzEyIDE2LjYyMDdMMS4zNzkyNyAxNi43NDI5QzEuNzY5NzkgMTcuMTMzNCAyLjQwMjk1IDE3LjEzMzQgMi43OTM0OCAxNi43NDI5TDkgMTAuNTM2NEwxNS4yMDY1IDE2Ljc0MjlDMTUuNTk3IDE3LjEzMzQgMTYuMjMwMiAxNy4xMzM0IDE2LjYyMDcgMTYuNzQyOUwxNi43NDI5IDE2LjYyMDdDMTcuMTMzNCAxNi4yMzAyIDE3LjEzMzQgMTUuNTk3IDE2Ljc0MjkgMTUuMjA2NUwxMC41MzY0IDlMMTYuNzQyOSAyLjc5MzQ4QzE3LjEzMzQgMi40MDI5NiAxNy4xMzM0IDEuNzY5NzkgMTYuNzQyOSAxLjM3OTI3TDE2LjYyMDcgMS4yNTcxMkMxNi4yMzAyIDAuODY2NTkyIDE1LjU5NyAwLjg2NjU5MyAxNS4yMDY1IDEuMjU3MTJMOSA3LjQ2MzY0TDIuNzkzNDggMS4yNTcxMloiIGZpbGw9IndoaXRlIi8+DQo8L3N2Zz4NCg==");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 320px) {
+      margin: 20px 10px;
+    }
+    @media (min-width: 768px) {
+      margin: 0;
+      position: absolute;
+      transform: translate(-70px, 20px);
+    }
+  }
+
+  .aside-call__heading {
+    font-family: TT Lakes;
+    border-left: 4px solid #41F6D7;
+    
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    color: #1b1c21;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+
+  .call-confirm {
+    padding: 20px 10px;
+
+    .call-confirm__input {
+      font-family: 'TT Lakes';
+      padding: 0 10px;
+      width: 278px;
+      height: 48px;
+      border: 1px solid #eaeaea;
+      border-radius: 5px;
+      outline: none;
+      margin-bottom: 16px;
+    }
+
+    .call-confirm__description {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #7e7e82;
+      margin-bottom: 18px;
+      a {
+        color: #ff3e79;
+      }
+    }
+
+    .call-confirm__button {
+      display: flex;
+      align-items: center;
+      width: 119px;
+      height: 32px;
+      background-color: #ff3e79;
+      color: #ffffff;
+      border-radius: 50px;
+      margin-left: auto;
+      margin-top: auto;
+      font-family: TT Lakes;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: -0.15000000596046448px;
+      &::before {
+        content: '';
+        width: 10px;
+        height: 5px;
+      }
+      &::after {
+        content: '';
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNi4wNTkwODIiIGhlaWdodD0iOS4yMzI2NjYiIHZpZXdCb3g9IjAgMCA2LjA1OTA4IDkuMjMyNjciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KCTxkZXNjPg0KCQkJQ3JlYXRlZCB3aXRoIFBpeHNvLg0KCTwvZGVzYz4NCgk8ZGVmcy8+DQoJPHBhdGggaWQ9ImRyb3Bkb3duIiBkPSJNMy4zMzEwNSA0LjYzMzNMMC4zMjI1MSAxLjg2MjNDLTAuMTA0OTggMS40Njg1MSAtMC4xMDc5MSAwLjc5NDY3OCAwLjMxNjE2MiAwLjM5NzIxN0wwLjQ1MTQxNiAwLjI3MDUwOEMwLjgzNDIyOSAtMC4wODg2MjMgMS40Mjk0NCAtMC4wOTAzMzIgMS44MTQ3IDAuMjY2MzU3TDUuNzM4NTMgMy44OTk0MUM2LjE2NjAyIDQuMjk1MTcgNi4xNjYwMiA0Ljk3MTE5IDUuNzM4NTMgNS4zNjY5NEwxLjg3NzY5IDguOTQxODlDMS40NTcwMyA5LjMzMTMgMC44MDY4ODUgOS4zMjkzNSAwLjM4ODY3MiA4LjkzNzI2Qy0wLjA3NDQ2MjkgOC41MDI5MyAtMC4wNzEyODkxIDcuNzY2ODUgMC4zOTU1MDggNy4zMzY5MUwzLjMzMTA1IDQuNjMzM1oiIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+DQo=");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+      }
+
+      &:hover{
+        transform: scale(1.03);
+        opacity: 90%;
+        transition: all 0.3s ease-out;
+      }
+    
+      &:active{
+        transform: scale(.9);
+        opacity: 50%;
+        transition: all 0.1s ease-out;
+      }
+    }
+  }
+
+}
+.hide-call{
+  transform: translateX(0px);
+  transition: all 0.5s ease-out;
+  box-shadow: 10px 0 50px 0;
+  z-index: 10;
+}
+
+// .call-blur {
+//   filter: blur(10px);
+//   transition: all 0.5s ease-out;
+// }
