@@ -27,6 +27,20 @@ const initSlider = function () {
   })
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const showAllButton = document.getElementById('showAllButton');
+  const sliderMenuItems = document.querySelectorAll('.slider-menu__item');
+
+  showAllButton.style.display = 'block'; // Показываем кнопку
+
+  showAllButton.addEventListener('click', function() {
+    sliderMenuItems.forEach(function(item) {
+      item.style.display = 'block';
+    });
+  });
+});
+
+
 initSlider()
 
 const sliderMenu = document.querySelector('.slider-menu__links')
@@ -45,3 +59,4 @@ showMore.addEventListener('click', function () {
     showMoreIcon.style.transform = 'rotate(0deg)'
   }
 })
+

@@ -33,22 +33,13 @@
 
   }
  #menu {
-    z-index: -4;
+    z-index: 2;
  }
 
- .text_focus:focus {
-  border: 2px solid #F8F8F8;
-  border-radius: 6px;
-  align-items: center;
-  display: flex;
-  outline: none;
-}
-.text_focus:focus {
+ .services__scrollbar-element--active{
   border: 2px solid #B8FFEC;
-  border-radius: 6px;
-  align-items: center;
-  display: flex;
-}
+  border-radius: 5px;
+ }
   .overlay--active {
     
     position: fixed;
