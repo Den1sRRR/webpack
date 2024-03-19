@@ -10,8 +10,6 @@ const overlay = document.querySelector('.overlay');
 document.addEventListener('keydown', function(event){
   if (event.key === 'Escape'){
     overlay.style.display = 'none';
-    
-    
   }
 })
 
@@ -30,7 +28,7 @@ closeButton.addEventListener('click', function (){
 });
 
 overlay.addEventListener('click', function(){
-
+  overlay.style.display = 'none'
   aside.classList.remove('hide-aside');
 })
 

@@ -27,18 +27,18 @@ const initSlider = function () {
   })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const showAllButton = document.getElementById('showAllButton');
-  const sliderMenuItems = document.querySelectorAll('.slider-menu__item');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const showAllButton = document.getElementById('showAllButton');
+//   const sliderMenuItems = document.querySelectorAll('.slider-menu__item');
 
-  showAllButton.style.display = 'block'; // Показываем кнопку
+//   showAllButton.style.display = 'block'; // Показываем кнопку
 
-  showAllButton.addEventListener('click', function() {
-    sliderMenuItems.forEach(function(item) {
-      item.style.display = 'block';
-    });
-  });
-});
+//   showAllButton.addEventListener('click', function() {
+//     sliderMenuItems.forEach(function(item) {
+//       item.style.display = 'block';
+//     });
+//   });
+// });
 
 
 initSlider()

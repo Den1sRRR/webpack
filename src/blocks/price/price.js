@@ -28,3 +28,19 @@ const initSlider = function () {
 }
 
 initSlider()
+
+    var serviceBlocks = document.querySelectorAll('.slider-price__wrapper');
+
+    serviceBlocks.forEach(function(block) {
+        block.addEventListener('click', function() {
+            window.location.href = '#'; 
+        });
+    });
+
+    var serviceBlocks = document.querySelectorAll('.slider-price__order');
+
+    serviceBlocks.forEach(function(block) {
+        block.addEventListener('click', function() {
+            window.location.href = '#'; 
+        });
+    });

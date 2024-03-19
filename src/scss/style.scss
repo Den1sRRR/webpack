@@ -14,13 +14,16 @@
 @import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
 
 @font-face {
-    font-family: 'TT Lakes';
+    font-family: 'TTLakes', sans-serif;
     src: url(/src/fonts/TTLakes-Regular.ttf), url(/src/fonts/TTLakes-Bold.ttf);
  }
   
 * {
-    font-family: 'TT Lakes';
+    font-family: 'TTLakes-Regular', sans-serif;
+    font-size: 1.7vh;
 }
+
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -28,12 +31,36 @@
     top: 0;
     left: 0;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+
+  }
+
+  .overlay_aside{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+
+  }
+  .overlay_status{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.9);
     display: none;
 
   }
  #menu {
-    z-index: 2;
+    z-index: 3;
+    background-color:#F8F8F8;
  }
 
  .services__scrollbar-element--active{

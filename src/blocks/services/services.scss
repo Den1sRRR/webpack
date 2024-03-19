@@ -9,10 +9,20 @@
     }
     @media (min-width: 768px){
       border-radius: 10px;
+      
+    }
+    @media (min-width: 1440px){
+      border-radius: 10px;
       width: 50%;
+      
     }
   }
-
+  .post-second-paragraph {
+    @media (min-width: 320px) and (max-width :767px){
+      overflow: hidden;
+      height: 18px;
+    }
+  }
   .text-post{
     @media (min-width: 320px){
       display: block;
@@ -25,10 +35,15 @@
       padding: 20px;
       font-family: "TT Lakes";
       font-size: 14px;
+      @media (min-width: 1440px) {
+        width: 70%;
+      }
+      
 
       .text-post__read-more{
         display: flex;
         align-items: center;
+        padding-top: 10px;
       }
     }
   }
@@ -45,7 +60,7 @@
       display: flex;
 
       @media (min-width: 768px){
-        flex-wrap: wrap;
+      
       }
 
       .services__scrollbar-element{
