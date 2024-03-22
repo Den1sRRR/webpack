@@ -1,4 +1,4 @@
-const callButton = document.querySelectorAll('.aside-footer__button--call');
+const callButton = document.querySelectorAll('.round_button--call');
 const asideMenu = document.querySelector('.aside-call');
 const closeCall = document.querySelector('.aside-call__close-button');
 const mainContent = document.querySelector('main');

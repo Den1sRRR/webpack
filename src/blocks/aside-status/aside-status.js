@@ -1,4 +1,4 @@
-const callButton = document.querySelectorAll('.aside-footer__button--chat');
+const callButton = document.querySelectorAll('.round_button--chat');
 const asideMenu = document.querySelector('.aside-status');
 const closeCall = document.querySelector('.aside-status__close-button');
 const mainContent = document.querySelector('main');
